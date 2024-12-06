@@ -1,0 +1,201 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+ html,
+ body {
+  scroll-behavior: smooth;
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+   font-size: 16px;
+   /* line-height: 1.6; */
+   /* background: #fff; */
+ }
+ 
+
+ 
+ *,
+ :after,
+ :before {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ a {
+   text-decoration: none;
+   background-color: transparent;
+ }
+ 
+ article,
+ aside,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section {
+   display: block;
+ }
+ 
+ a,
+ a:hover,
+ a:visited,
+ a:active,
+ input,
+ input:hover,
+ input:active,
+ input:focus,
+ textarea,
+ textarea:hover,
+ textarea:active,
+ textarea:focus,
+ button,
+ button:focus,
+ button:hover,
+ button:active,
+ select,
+ select:focus,
+ select:hover,
+ select:active {
+   outline: 0;
+ }
+ 
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   /* list-style: none; */
+ }
+ 
+ .h1,
+ .h2,
+ .h3,
+ .h4,
+ .h5,
+ .h6,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   margin: 0;
+   margin-bottom: .5rem;
+   font-weight: 500;
+   line-height: 1.2;
+ }
+ 
+ h1 {
+   font-size: 24px;
+   font-weight: 600;
+   /* color: #131313; */
+ }
+ 
+ @media(min-width:900px) {
+   h1 {
+     font-size: 48px;
+   }
+ }
+ 
+ p {
+   font-size: 16px;
+   font-weight: 400;
+   /* color: #5A5A59; */
+ }
+ 
+ @media(min-width:900px) {
+   p {
+     font-size: 18px;
+   }
+ }
+ 
+ 
+ @media(min-width:900px) {
+   .commonpara {
+     font-size: 20px;
+   }
+ }
+ 
+ 
+ .container {
+   margin-inline: auto;
+   padding-inline: 16px;
+   width: 100%;
+ }
+ 
+ @media (min-width:992px) {
+   .container {
+     /* max-width: 768px; */
+   }
+ }
+ 
+ @media (min-width:1280px) {
+   .container {
+     max-width: 1080px;
+   }
+ }
+ 
+ @media (min-width:1366px) {
+   .container {
+     max-width: 1280px;
+   }
+ }
+ 
+ img {
+   max-width: 100%;
+   height: auto;
+ }
+ 
+ .display-flex {
+   display: flex !important;
+ }
+ 
+ .overlay:target .popup{
+  animation: popup 0.7s;
+}
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  60%{
+    transform: scale(1.1);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  80%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+ 
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

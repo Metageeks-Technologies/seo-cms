@@ -1,0 +1,158 @@
+.card {
+  width: 100%;
+  background-color: #fff3ed;
+  position: relative;
+  padding: 50px 0; 
+  overflow: hidden;
+}
+.inline {
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  gap: 56px;
+}
+.wrapper {
+  gap: 50px;
+  z-index: 1; /* Ensures it stays above the background pattern */
+}
+
+.patternimg {
+  width: 50%;
+  position: relative;
+  z-index: 11;
+}
+
+
+.rightcol {
+  width: 50%;
+  z-index: 1;
+  align-items: center;
+}
+
+.rightcol h1 {
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 72px;
+  /* margin: 0 0 20px 0; */
+  color: rgba(19, 19, 19, 1);
+}
+
+.rightcol p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #5a5a59;
+  margin-top: 20px;
+}
+
+.readbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  width: 217px;
+  height: 72px;
+  background: radial-gradient(
+    40.25% 106.25% at 50.26% 50%,
+    #844aff 0%,
+    #6015ff 100%
+  );
+  border-radius: 90px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fffefd;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.readbtn:hover {
+  background: radial-gradient(
+    40.25% 106.25% at 50.26% 50%,
+    #6015ff 0%,
+    #844aff 100%
+  );
+}
+
+.backgroundPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  /* height: auto; */
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+/* Responsive styles for tablet and smaller devices */
+@media (max-width: 768px) {
+  .inline {
+    display:flex ;
+    justify-content: space-between;
+  }
+
+  .patternimg {
+    margin-bottom: 30px;
+  }
+
+  .rightcol h1 {
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .rightcol p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px;
+  }
+
+  .readbtn {
+    /* margin: auto; */
+    margin-top: 25px;
+    width: 100%; 
+    max-width: 217px;
+  }
+}
+
+/* Additional responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .rightcol h1 {
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 500;
+    color: #131313;
+    text-align: center;
+
+  }
+  .rightcol p {
+    color: #5A5A59;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 25px;
+    text-align: center;
+
+  }
+  .rightcol {
+    width: 100%;
+  }
+  .patternimg {
+    width: 100%;
+  }
+
+  .readbtn {
+    width: 165px ;
+    height: 56px;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .readbtn img {
+    display: none;
+  }
+  .inline {
+    display: inline;
+    text-align: center;
+  }
+
+}

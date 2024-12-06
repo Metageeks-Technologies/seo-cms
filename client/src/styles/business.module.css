@@ -1,0 +1,144 @@
+.backgroundcard {
+    background-color: #FFF3ED;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    /* text-align: left; */
+    /* margin-bottom: 40px; */
+  }
+  .inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .processInfo .badge {
+    /* display: inline-block;
+    padding: 5px 10px;
+    background: #fee8d6;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 
+  .projectbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 215px;
+    height: 72px;
+    background: radial-gradient(
+      40.25% 106.25% at 50.26% 50%,
+      #844aff 0%,
+      #6015ff 100%
+    );
+    border-radius: 90px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fffefd;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-left: 150px; */
+  }
+  
+  .processInfo h1 {
+    /* font-size: 72px; */
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  
+  .processInfo p {
+    font-size: 16px;
+    /* margin: 10px 0 20px; */
+    color: #5A5A59;
+  }
+  
+  .processInfo .moreProjects {
+    background: #6c47ff;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .processInfo .moreProjects:hover {
+    background: #5a3ded;
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  .carouselTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carouselItem {
+    min-width: 100%;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .carouselItem img {
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+    /* max-height: 400px; */
+  }
+  
+  .carouselItem p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .carouselItem.active {
+    opacity: 1;
+  }
+  
+  .carouselBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .carouselBtn.left {
+    left: 10px;
+  }
+  
+  .carouselBtn.right {
+    right: 10px;
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+        .processInfo h1 {
+            font-size: 42px;
+            line-height: 42px;
+    }
+    .header {
+      display: block;
+    }
+  }

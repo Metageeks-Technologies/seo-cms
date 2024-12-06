@@ -1,0 +1,149 @@
+.imgcontent {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.card {
+    display: inline;
+}
+
+.mainheading {
+    margin-top: 15px;
+    font-size: 96px;
+    color: #131313;
+    font-weight: 500;
+    line-height: 96px;
+}
+.margintop {
+    margin-top: 56px;
+}
+.para {
+    color: #5A5A59;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+}
+
+.para p {
+    margin: 0;
+}
+
+.mainbtn {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 12px;
+}
+
+.mainbtn button {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 56px;
+    border-radius: 96px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border: none;
+    gap: 12px;
+}
+
+.getbtn {
+    width: 239px;
+    height: 72px;
+    background: radial-gradient(40.25% 106.25% at 50.26% 50%, #844AFF 0%, #6015FF 100%);
+    color: #FFFEFD;
+}
+
+.learnbtn {
+    width: 193px;
+    height: 72px;
+    color: #131313;
+    background-color: #FFF3ED;
+}
+
+/* Tablet and desktop view (min-width: 768px) */
+@media (min-width: 768px) {
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mainheading {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .flexbox {
+        width: 50%;
+    }
+}
+
+/* Larger desktop view (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .card {
+        margin-top: 32px;
+    }
+
+    .mainheading {
+        /* font-size: 96px; */
+        /* line-height: 96px; */
+    }
+}
+
+/* Mobile-specific styles (max-width: 767px) */
+@media (max-width: 767px) {
+
+    .mainheading {
+        font-size: 48px;
+        text-align: center;
+        line-height: 48px;
+    }
+
+    .para {
+        text-align: center;
+        color: #5A5A59;
+    }
+
+    .getbtn,
+    .learnbtn {
+        width: 100%;
+        max-width: 175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 90px;
+        font-size: 14px;
+    }
+
+    .getbtn img,
+    .learnbtn img {
+        display: none;
+    }
+
+    .mainbtn button {
+        font-size: 14px;
+        width: 175px;
+        height: 56px;
+    }
+
+    .imgcontent {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgcontent img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Medium screen (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .mainheading {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}

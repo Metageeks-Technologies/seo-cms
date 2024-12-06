@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px; 
+    background-color: #FFFEFD;
+    overflow: hidden; 
+    width: 100%; 
+  }
+  
+  .imageSlider {
+    display: flex;
+    gap: 72px;
+    animation: slide 8s linear infinite; 
+    justify-content: flex-start; 
+    width: fit-content; 
+  }
+  
+ 
+  
+  /* Define the animation to move the images horizontally */
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
