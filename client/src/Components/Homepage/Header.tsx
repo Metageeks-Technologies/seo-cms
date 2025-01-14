@@ -1,18 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import style from "../../styles/Header.module.css";
-import Popup from "@/Components/clickable/popup"
+import Popup from "@/Components/clickable/popup";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 const Headers = () => {
   const [navbar, setNavbar] = useState(false);
-  const [isPopupOpen, setIsPopupOpen] = useState(false); 
-
-  const [activeTab, setActiveTab] = useState("/"); 
-
-  const pathname = usePathname();
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("/");
 
   const handleMenu = () => {
     setNavbar(!navbar);
@@ -22,16 +18,17 @@ const Headers = () => {
     setNavbar(false);
   };
 
-  const handleActiveTab = (tab) => {
-    setActiveTab(tab); 
+  const handleActiveTab = (tab: string) => {
+    setActiveTab(tab);
     closeNavbar();
   };
+
   const openPopup = () => {
-    setIsPopupOpen(true); // Open popup
+    setIsPopupOpen(true);
   };
 
   const closePopup = () => {
-    setIsPopupOpen(false); // Close popup
+    setIsPopupOpen(false);
   };
 
   return (
@@ -42,24 +39,24 @@ const Headers = () => {
             <div className={style.headerfix}>
               <div className={style.menu}>
                 <div className={style.headerimgmobile}>
-                  <a href="/">
+                  <Link href="/">
                     <Image
                       src="/image/headerlogo.svg"
                       alt="badge"
                       width={100}
                       height={23}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className={style.headerimg}>
-                  <a href="/">
+                  <Link href="/">
                     <Image
                       src="/image/headerlogo.svg"
                       alt="badge"
                       width={127}
                       height={29}
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -72,7 +69,7 @@ const Headers = () => {
             >
               <ul className={style["nav-list"]}>
                 <li className={style.crossbtn} onClick={closeNavbar}>
-                  <img
+                  <Image
                     src="/image/Menu.svg"
                     alt="menu"
                     width={40}
@@ -155,7 +152,7 @@ const Headers = () => {
               onClick={handleMenu}
             ></aside>
             <div className={style.btnleft}>
-              <button className={style.joinbtn}  onClick={openPopup}>
+              <button className={style.joinbtn} onClick={openPopup}>
                 Free Consultation
                 <Image
                   src="image/Arrow.svg"

@@ -4,7 +4,6 @@ const Testimonial = () => {
   const cards = [
     {
       image: "/image/greenish.svg",
-      // title: "",
       subtitle: "Team management",
       growth: "195% Growth",
     },
@@ -24,7 +23,7 @@ const Testimonial = () => {
   const testimonials = [
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img1.png",
       company: "Greenish",
@@ -32,7 +31,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img2.png",
       company: "Greenish",
@@ -40,7 +39,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img1.png",
       company: "Greenish",
@@ -48,7 +47,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img3.png",
       company: "Greenish",
@@ -56,7 +55,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img2.png",
       company: "Greenish",
@@ -64,7 +63,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img1.png",
       company: "Greenish",
@@ -72,7 +71,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "“their team are easy to work with and helped me make amazing website in a short amount of time. thanks guys for all your hand work.”",
+        "Their team are easy to work with and helped me make amazing website in a short amount of time. Thanks guys for all your hand work.",
       name: "Matthew Miller",
       image: "img3.png",
       company: "Greenish",
@@ -93,7 +92,7 @@ const Testimonial = () => {
 
               {/* Header Title */}
               <div className="text-4xl mt-4 text-[#FFFEFD] ">
-                <h1>Trusted By The World's Fastest </h1>
+                <h1>Trusted By The World&apos;s Fastest </h1>
                 <h1>Growing Companies</h1>
               </div>
             </div>

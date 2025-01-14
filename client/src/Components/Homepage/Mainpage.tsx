@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../../styles/Mainpage.module.css";
 import Image from "next/image";
+import heroimg from "../../../public/image/Illustration.svg"
 const Mainpage = () => {
   return (
     <>
@@ -42,7 +43,7 @@ const Mainpage = () => {
             </div>
             <div className="display-flex">
               <Image
-                src="/image/illustration.svg"
+                src={heroimg}
                 alt="why"
                 width={500}
                 height={500}

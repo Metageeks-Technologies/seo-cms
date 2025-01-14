@@ -1,19 +1,14 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import styles from "../../styles/Services.module.css";
-import getScrollAnimation from "../utils/getScrollAnimation";
-
 
 export default function Services() {
-  const [openIndex, setOpenIndex] = useState(1);
+  const [openIndex, setOpenIndex] = useState<number | null>(1);
 
-  const toggleContent = (index) => {
+  const toggleContent = (index: number): void => {
     setOpenIndex(index === openIndex ? null : index);
-
   };
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
 
   return (
     <div className="container" id="Service">
@@ -188,7 +183,7 @@ export default function Services() {
                   alt="img"
                   width={262}
                   height={182}
-                />{" "}
+                />
                 <p>
                   We strive to develop real-world web solutions that are ideal
                   for small to large projects with bespoke project requirements.
@@ -238,7 +233,7 @@ export default function Services() {
                   alt="img"
                   width={262}
                   height={182}
-                />{" "}
+                />
                 <p>
                   We strive to develop real-world web solutions that are ideal
                   for small to large projects with bespoke project requirements.
