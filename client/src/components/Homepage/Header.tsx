@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import style from "../../styles/Header.module.css";
-import Popup from "@/Components/clickable/popup";
+import Popup from "@/components/clickable/popup";
 import Link from "next/link";
 import Image from "next/image";
 

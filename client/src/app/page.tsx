@@ -1,16 +1,14 @@
 "use-client";
-// import { motion } from "framer-motion";
-import AboutUs from "@/Components/Homepage/AboutUs";
-import BusinessProcess from "@/Components/Homepage/BusinessProcess";
-import Headers from "@/Components/Homepage/Header";
-import Mainpage from "@/Components/Homepage/Mainpage";
-import Partner from "@/Components/Homepage/Partner";
-import Project from "@/Components/Homepage/Project";
-import Services from "@/Components/Homepage/Services";
-import Footer from "@/Components/Homepage/Footer";
-import Testimonial from "@/Components/Homepage/Testimonial";
+import AboutUs from "@/components/Homepage/AboutUs";
+import BusinessProcess from "@/components/Homepage/BusinessProcess";
+import Headers from "@/components/Homepage/Header";
+import Mainpage from "@/components/Homepage/Mainpage";
+import Partner from "@/components/Homepage/Partner";
+import Project from "@/components/Homepage/Project";
+import Services from "@/components/Homepage/Services";
+import Footer from "@/components/Homepage/Footer";
+import Testimonial from "@/components/Homepage/Testimonial";
 
-// import MotionWrapper from '@/Components/motion/MotionWrapper';
 
 export default function Home() {
   return (
@@ -22,11 +20,8 @@ export default function Home() {
       <Project />
       <Services />
       <BusinessProcess />
-      {/* <Tes /> */}
-      {/* <TestimonialHeader /> */}
       <Testimonial />
       <Footer />
-      {/* </MotionWrapper> */}
     </div>
   );
 }

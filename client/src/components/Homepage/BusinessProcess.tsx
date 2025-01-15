@@ -21,7 +21,7 @@ export default function BusinessProcess() {
 
   return (
     <div className={styles.backgroundcard} id="Service">
-      <div className="container">
+      <div className="container py-10">
         <div className={styles.header}>
           <div className={styles.processInfo}>
             <div className={styles.inline}>
@@ -37,7 +37,8 @@ export default function BusinessProcess() {
             </div>
             <h1>Understand The Business Process.</h1>
           </div>
-          <div className={styles.rightcol}>
+        </div>
+        <div className={styles.rightcol}>
             <p>
               We strive to develop real-world web solutions that are ideal for
               small to large projects with bespoke project requirements.
@@ -47,7 +48,6 @@ export default function BusinessProcess() {
               <Image src="/image/whitearrow.svg" alt="arrow" width={24} height={24} />
             </div>
           </div>
-        </div>
       </div>
       <div className={styles.carousel}>
         <div

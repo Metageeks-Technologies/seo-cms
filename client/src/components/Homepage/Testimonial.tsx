@@ -81,7 +81,7 @@ const Testimonial = () => {
   ];
   return (
     <>
-      <div className="bg-[#131313] px-4 sm:px-12 h-auto" id="Testimonial">
+      <div className= "bg-black px-4 sm:px-12 h-auto" id="Testimonial">
         <div className="max-w-[1290px] mx-auto">
           <header className="text-white py-16 text-center">
             <p className="flex justify-center items-center text-xs font-thin sm:text-base">

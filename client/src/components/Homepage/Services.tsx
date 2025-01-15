@@ -11,7 +11,7 @@ export default function Services() {
   };
 
   return (
-    <div className="container" id="Service">
+    <div className="container py-10" id="Service">
       <div className={styles.header}>
         <div className={styles.icon}>
           <div>
@@ -33,10 +33,10 @@ export default function Services() {
               mission to help you take the next step in your business.
             </p>
           </div>
-          <div className={styles.servicesButton}>
+          <button className={styles.servicesButton}>
             View all services
             <Image src="/image/whitearrow.svg" alt="" width={24} height={24} />
-          </div>
+          </button>
         </div>
         <div className={styles.services}>
           <div
