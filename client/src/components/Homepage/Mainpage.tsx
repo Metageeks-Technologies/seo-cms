@@ -1,8 +1,22 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import style from "../../styles/Mainpage.module.css";
 import Image from "next/image";
+import Popup from "@/components/clickable/popup";
+
 import heroimg from "../../../public/image/Illustration.svg"
 const Mainpage = () => {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <>
       <div className={style.card} id="Mainpage">
@@ -31,7 +45,7 @@ const Mainpage = () => {
                 </p>
               </div>
               <div className={style.mainbtn}>
-                <button className={style.getbtn}>
+                <button className={style.getbtn} onClick={openPopup}> 
                   Get Started Now
                   <Image src="/image/whitearrow.svg" alt="whitearrow" width={24} height={24} />
                 </button>
@@ -52,6 +66,8 @@ const Mainpage = () => {
           </div>
         </div>
       </div>
+      <Popup isOpen={isPopupOpen} onClose={closePopup} />
+
     </>
   );
 };

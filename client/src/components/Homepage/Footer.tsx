@@ -17,8 +17,8 @@ const Footer = () => {
         <div className="w-full h-[50px] flex flex-row ">
           <div className="w-full h-full rounded-tl-[42px] rounded-tr-3xl bg-black"></div>
           <div className="w-[60%] sm:w-[40%] md:w-[30%] h-full bg-black">
-            <div className="flex justify-evenly gap-[10px] items-center text-[18px] lg:text-[24px] w-full h-full bg-[#eeeeee] rounded-bl-3xl pl-2">
-              <div className="p-[10px] bg-black text-gray-500 rounded-full cursor-pointer hover:text-white">
+          <div className="flex justify-evenly gap-[10px] items-center text-[18px] lg:text-[24px] w-full h-full bg-white rounded-bl-3xl pl-2 border border-white">
+          <div className="p-[10px] bg-black text-gray-500 rounded-full cursor-pointer hover:text-white">
                 <FaDribbble />
               </div>
               <div className="p-[10px] bg-black text-gray-500 rounded-full cursor-pointer hover:text-white">

@@ -104,9 +104,7 @@
     /* padding-left: 1.5rem; */
   }
   
-  .arrow {
-    /* font-size: 1.5rem; */
-  }
+  
   
   .image {
     margin-top: 1rem;
@@ -116,10 +114,7 @@
   }
   
   /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .container {
-      /* padding: 1rem; */
-    }
+ 
   
     .mainHeading {
       font-size: 42px;
@@ -144,7 +139,7 @@
     }
   
  
-  }
+  
   
   @media (max-width: 480px) {
     .mainHeading {
@@ -157,13 +152,7 @@
         font-weight: 400;
     }
   
-    .description {
-      /* font-size: 0.85rem; */
-    }
   
-    .serviceHeader h2 {
-      /* font-size: 1rem; */
-    }
     .header {
         display: inline;
     }
