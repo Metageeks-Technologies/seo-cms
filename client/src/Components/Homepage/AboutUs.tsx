@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styles from "../../styles/Aboutus.module.css";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import Image from "next/image";
+import aboutimg from "../../../public/image/Illustration2.svg"
 
 const AboutUs = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -28,7 +29,7 @@ const AboutUs = () => {
             <div className={styles.inline}>
               <div className={styles.patternimg}>
                 <Image
-                  src="/image/illustration2.svg"
+                  src={aboutimg}
                   alt="pattern"
                   width={668}
                   height={595}
