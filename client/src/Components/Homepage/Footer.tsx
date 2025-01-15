@@ -1,5 +1,4 @@
 import React from "react";
-// import styles from '../styles/footer.module.css'
 import { FaDribbble } from "react-icons/fa";
 import { TbBrandFacebookFilled } from "react-icons/tb";
 import { BsTwitterX } from "react-icons/bs";
