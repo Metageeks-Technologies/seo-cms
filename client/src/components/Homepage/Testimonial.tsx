@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import cardimg from "../../../public/image/testibg.svg"
 
 const Testimonial = () => {
   const cards = [
@@ -81,7 +83,7 @@ const Testimonial = () => {
   ];
   return (
     <>
-      <div className= "bg-black px-4 sm:px-12 h-auto" id="Testimonial">
+      <div className="bg-black px-4 sm:px-12 h-auto" id="Testimonial">
         <div className="max-w-[1290px] mx-auto">
           <header className="text-white py-16 text-center">
             <p className="flex justify-center items-center text-xs font-thin sm:text-base">
@@ -96,25 +98,33 @@ const Testimonial = () => {
           </header>
 
           <div className="py-8">
-            <div className="flex flex-wrap gap-7 items-center justify-center">
+            <div className="flex flex-wrap gap-7 items-center justify-center ">
               {cards.map((card, index) => (
-                <div key={index} className="w-[350px] relative">
-                  <img src="/image/testibg.svg" alt="" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 p-3 flex flex-col justify-between text-lg">
-                    <div className="flex justify-between">
+                <div key={index} className="w-[350px] relative flex flex-col">
+                  <Image
+                  src={cardimg}
+                   width={300}
+                   height={400}
+                   alt="" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 p-3 flex flex-col justify-between text-lg px-5">
+                    <div className="flex justify-between items-center">
                       <div className="flex items-center gap-2">
-                        <img src={card.image} alt="" className="w-[20px] sm:w-[35px]" />
-                        <h3 className="text-[#E2CCBF] text-sm sm:text-2xl font-bold">
-                          {card.title}
-                        </h3>
+                        <img src={card.image} alt="" className="w-[40px] sm:w-[50px]" />
                       </div>
                       <p className="text-[#D2D2D2] text-sm sm:text-lg">
                         {card.subtitle}
                       </p>
                     </div>
-                    <div className="self-end text-[#B3B3B3] text-xs sm:text-sm border border-gray-600 p-2 rounded-full">
-                      {card.growth}
+                    <div>
+                    <h3 className="text-[#E2CCBF] text-base sm:text-2xl font-bold">
+                          {card.title}
+                        </h3>
                     </div>
+                    {/* This section has been removed from here */}
+                  </div>
+                  {/* Move the growth section outside and position it at the bottom-right */}
+                  <div className="absolute bottom-1 right-2 w-28 text-[#B3B3B3] text-xs sm:text-sm border border-gray-600 p-2 rounded-full">
+                    {card.growth}
                   </div>
                 </div>
               ))}
