@@ -78,7 +78,7 @@ const Project = () => {
       </h3>
     </div>
     <div className={styles.sidepara}>
-      <p>
+      <p className="mb-3">
         We strive to develop real-world web solutions that are ideal for small
         to large projects with bespoke project requirements.
       </p>

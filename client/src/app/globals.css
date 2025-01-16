@@ -132,12 +132,6 @@
    width: 100%;
  }
  
- @media (min-width:992px) {
-   .container {
-     /* max-width: 768px; */
-   }
- }
- 
  @media (min-width:1280px) {
    .container {
      max-width: 1080px;
@@ -198,4 +192,13 @@ button:hover {
   100% {
     opacity: 1;
   }
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  display: none;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
+  content: "pre";
+  display: none;
 }
